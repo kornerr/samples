@@ -1,0 +1,7 @@
+nodemodel
+    box
+        file = box.osgt
+node
+    subject
+        model = box
+scene = subject
