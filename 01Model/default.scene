@@ -1,7 +1,5 @@
-nodemodel
-    box
-        file = box.osgt
 node
-    subject
-        model = box
-scene = subject
+    default
+        subject
+            model = box.osgt
+            parent = ROOT

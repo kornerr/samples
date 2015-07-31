@@ -1,5 +1,0 @@
-node
-    Scene
-        subject
-            model = box.osgt
-            parent = ROOT
