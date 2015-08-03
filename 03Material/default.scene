@@ -1,0 +1,17 @@
+node
+    default
+        left
+            model = box.osgt
+            parent = ROOT
+            position = -2 0 0
+            selectable = 1
+        subleft
+            model = box.osgt
+            parent = left
+            position = 0 0 -1
+            selectable = 1
+        right
+            model = box.osgt
+            parent = ROOT
+            position = 2 0 0
+            selectable = 1
