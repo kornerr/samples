@@ -1,6 +1,10 @@
+material
+    default
+        compositor = default
 node
     default
         left
+            material = box
             model = box.osgt
             parent = ROOT
             position = -2 0 0
@@ -11,6 +15,7 @@ node
             position = 0 0 -1
             selectable = 1
         right
+            material = selection
             model = box.osgt
             parent = ROOT
             position = 2 0 0
