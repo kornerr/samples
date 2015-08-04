@@ -1,0 +1,22 @@
+material
+    default
+        compositor = default
+node
+    default
+        left
+            material = box
+            model = box.osgt
+            parent = ROOT
+            position = -2 0 0
+            selectable = 1
+        subleft
+            model = box.osgt
+            parent = left
+            position = 0 0 -1
+            selectable = 1
+        right
+            material = selection
+            model = box.osgt
+            parent = ROOT
+            position = 2 0 0
+            selectable = 1
