@@ -1,4 +1,8 @@
 sample
+    delete
+        key = INPUT_KEY_D
+    parent
+        key = INPUT_KEY_P
     quit
         key = INPUT_KEY_ESCAPE
     rename
