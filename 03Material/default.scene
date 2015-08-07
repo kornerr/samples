@@ -1,6 +1,3 @@
-material
-    default
-        compositor = default
 node
     default
         left
