@@ -15,19 +15,10 @@ node
         right
             parent = ROOT
             position = 2.000000 0.000000 0.000000
-            material = EDITOR_SELECTION_MATERIAL
+            material = selection
             model = box.osgt
             selectable = 1
         subright
             parent = right
             position = 1.000000 0.000000 0.000000
             model = box.osgt
-        plane
-            parent = ROOT
-            position = 0 0 -2
-            material = floor
-            model = l2_env_floor.osgt
-        processor
-            parent = ROOT
-            material = processorSurface
-            model = l2_env_processor.osgt

@@ -1,15 +1,16 @@
 <compositor>
     <include>pipeline/textures.xml</include>
-    <material name="selection">
-        <texture unit="0" varname="diffuseMap">selection</texture>
-        <texture unit="2" varname="glowMap">selectionGlow</texture>
+    <material name="EDITOR_SELECTION_MATERIAL">
+        <texture unit="0" varname="diffuseMap">EDITOR_SELECTION_TEXTURE</texture>
+        <texture unit="2" varname="glowMap">EDITOR_SELECTION_GLOW_TEXTURE</texture>
         <uniform name="useGlowMap" type="int">
             <value>1</value>
         </uniform>
         <polygonMode>line</polygonMode>
     </material>
-    <material name="box">
-        <texture unit="1" varname="normalMap">boxNormal</texture>
+    <material name="processorSurface">
+        <texture unit="0" varname="diffuseMap">processorDiffuse</texture>
+        <texture unit="1" varname="normalMap">processorNormal</texture>
         <uniform name="useNormalMap" type="int">
             <value>1</value>
         </uniform>

@@ -3,13 +3,16 @@
     <texture name="DEFAULT_TEXTURE" template="textureTemplate">
         <file>pipeline/textures/noise_tex.png</file>
     </texture>
-    <texture name="boxNormal" template="textureTemplate">
-        <file>pipeline/textures/box_n.png</file>
-    </texture>
-    <texture name="selection" template="textureTemplate">
+    <texture name="EDITOR_SELECTION_TEXTURE" template="textureTemplate">
         <file>pipeline/textures/selection.png</file>
     </texture>
-    <texture name="selectionGlow" template="textureTemplate">
+    <texture name="EDITOR_SELECTION_GLOW_TEXTURE" template="textureTemplate">
         <file>pipeline/textures/selection.png</file>
+    </texture>
+    <texture name="processorDiffuse" template="textureTemplate">
+        <file>pipeline/textures/l2_env_processor_tex.png</file>
+    </texture>
+    <texture name="processorNormal" template="textureTemplate">
+        <file>pipeline/textures/l2_env_processor_n.png</file>
     </texture>
 </compositor>

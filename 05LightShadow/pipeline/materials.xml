@@ -1,0 +1,18 @@
+<compositor>
+    <include>pipeline/textures.xml</include>
+    <material name="selection">
+        <texture unit="0" varname="diffuseMap">selection</texture>
+        <texture unit="2" varname="glowMap">selectionGlow</texture>
+        <uniform name="useGlowMap" type="int">
+            <value>1</value>
+        </uniform>
+        <polygonMode>line</polygonMode>
+    </material>
+    <material name="box">
+        <texture unit="0" varname="diffuseMap">columnDiffuse</texture>
+        <texture unit="1" varname="normalMap">boxNormal</texture>
+        <uniform name="useNormalMap" type="int">
+            <value>1</value>
+        </uniform>
+    </material>
+</compositor>
