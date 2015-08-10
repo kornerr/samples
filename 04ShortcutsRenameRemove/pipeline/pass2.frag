@@ -44,9 +44,9 @@ void main()
     vec3 h_worldspace = normalize(lightDir_worldspace + viewDir_worldspace);
     float spec = pow(max(0.0, dot(h_worldspace, n_worldspace)), 40.0);
     // Final fragment color.
-    vec3 color = diff * c_worldspace * s_worldspace;
+    vec3 color = diff * c_worldspace;// * s_worldspace;
     // Only add specular if the fragment is NOT in the shadow.
-    if (s_worldspace.x == 1.0)
+    //if (s_worldspace.x == 1.0)
         color += spec;
     // Add glow.
     color += g_worldspace;
