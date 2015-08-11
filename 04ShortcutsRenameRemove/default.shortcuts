@@ -11,4 +11,3 @@ sample
         key = INPUT_KEY_S
     select
         key = INPUT_MOUSE_BUTTON_LEFT
-        key = INPUT_KEY_CONTROL_L

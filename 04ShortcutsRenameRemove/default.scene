@@ -1,33 +1,23 @@
-
 node
     default
         left
-            parent = ROOT
-            position = -2.000000 0.000000 0.000000
             material = box
             model = box.osgt
+            parent = ROOT
+            position = -2 0 0
             selectable = 1
         subleft
-            parent = left
-            position = 0.000000 0.000000 -1.000000
             model = box.osgt
+            parent = left
+            position = 0 0 -1
             selectable = 1
         right
-            parent = ROOT
-            position = 2.000000 0.000000 0.000000
-            material = EDITOR_SELECTION_MATERIAL
+            material = selection
             model = box.osgt
+            parent = ROOT
+            position = 2 0 0
             selectable = 1
         subright
-            parent = right
-            position = 1.000000 0.000000 0.000000
             model = box.osgt
-        plane
-            parent = ROOT
-            position = 0 0 -2
-            material = floor
-            model = l2_env_floor.osgt
-        processor
-            parent = ROOT
-            material = processorSurface
-            model = l2_env_processor.osgt
+            parent = right
+            position = 1 0 0
