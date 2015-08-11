@@ -1,6 +1,10 @@
 
 node
     default
+        light
+            parent = ROOT
+            position = 0 -5 10
+            light = light
         left
             parent = ROOT
             position = -2.000000 0.000000 0.000000
