@@ -6,9 +6,6 @@
     <texture name="boxNormal" template="textureTemplate">
         <file>pipeline/textures/box_n.png</file>
     </texture>
-    <texture name="columnDiffuse" template="textureTemplate">
-        <file>pipeline/textures/cement.png</file>
-    </texture>
     <texture name="selection" template="textureTemplate">
         <file>pipeline/textures/selection.png</file>
     </texture>
