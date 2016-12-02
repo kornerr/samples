@@ -5,7 +5,6 @@ uniform sampler2DRect positionMap;
 uniform sampler2DRect colorMap;
 uniform sampler2DRect normalMap;
 uniform sampler2DRect glowMap;
-uniform sampler2DRect shadowMap;
 
 vec3 glowBlur(sampler2DRect glowMap,
               vec2          xy,
@@ -29,7 +28,6 @@ void main()
     vec3 p_worldspace = texture2DRect(positionMap, gl_FragCoord.xy).xyz;
     vec3 c_worldspace = texture2DRect(colorMap,    gl_FragCoord.xy).xyz;
     vec3 n_worldspace = texture2DRect(normalMap,   gl_FragCoord.xy).xyz;
-    vec3 s_worldspace = texture2DRect(shadowMap,   gl_FragCoord.xy).xyz;
     vec3 g_worldspace = glowBlur(glowMap, gl_FragCoord.xy, 10, vec2(3, 3));
     // Direction from point to light (not vice versa!)
     vec3 lightDir_worldspace = normalize(lightPos - p_worldspace);
@@ -44,10 +42,9 @@ void main()
     vec3 h_worldspace = normalize(lightDir_worldspace + viewDir_worldspace);
     float spec = pow(max(0.0, dot(h_worldspace, n_worldspace)), 40.0);
     // Final fragment color.
-    vec3 color = diff * c_worldspace * s_worldspace;
-    // Only add specular if the fragment is NOT in the shadow.
-    if (s_worldspace.x == 1.0)
-        color += spec;
+    vec3 color = diff * c_worldspace;
+    // Add specular.
+    color += spec;
     // Add glow.
     color += g_worldspace;
     gl_FragColor = vec4(color, 1.0);
