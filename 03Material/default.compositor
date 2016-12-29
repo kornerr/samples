@@ -1,1 +1,3 @@
-filename = pipeline/compositor.xml
+compositor
+    default
+        file = pipeline/compositor.xml
